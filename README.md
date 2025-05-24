@@ -1,5 +1,5 @@
 <a href="#">
-  <h1 align="center">Sitemint: Your All-in-One Web Management Toolkit</h1>
+  <h1 align="center">fork of Sitemint: Your All-in-One Web Management Toolkit</h1>
 </a>
 
 <!-- Add a relevant image/mockup for Sitemint here if available -->
@@ -8,7 +8,6 @@
 <p align="center">
   Empower your web projects with Sitemint - streamlined site management, deployment, and insights at your fingertips.
   <br/>
-  <strong>Now fully localized for English-speaking businesses in Ireland! 🇮🇪</strong>
 </p>
 
 <p align="center">
@@ -29,11 +28,7 @@
 </p>
 <br/>
 
-## Introduction
 
-Welcome to Sitemint, where we are redefining web project management for **English-speaking businesses in Ireland**. Sitemint provides a comprehensive suite of tools to help you build, deploy, and manage your web applications with ease. Whether you're scraping data, managing databases, or deploying your next big idea, Sitemint is designed to streamline your workflow with full Irish localization.
-
-Gain powerful insights and control over your web projects, enabling you to focus on innovation and development while serving the Irish market with proper localization and business practices.
 
 ## 🌍 Localization Features
 
@@ -168,15 +163,6 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 ### Platforms (Example Integrations)
 
 - [Vercel](https://vercel.com/) – Easily preview & deploy changes with Git.
-
-## 🚀 Quick Start for Irish Businesses
-
-**This fork enables you to:**
-
-1. **Scrape Irish websites** - Use the website scraper with automatic English content generation (converted from Norwegian)
-2. **Generate professional emails** - Built-in English email templates for client outreach (was Norwegian)
-3. **Deploy carpenter sites** - Ready-to-use English carpenter/tradesperson templates (converted from Norwegian snekker)
-4. **Irish business standards** - Automatic formatting for Irish phone numbers, addresses, and currency (adapted from Norwegian standards)
 
 ## Contributing
 
