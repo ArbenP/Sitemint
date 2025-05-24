@@ -45,7 +45,7 @@ export function Contact({ site }: ContactProps) {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     toast.success("Thank you for your enquiry!", {
-      description: "We'll get back to you within 24 hours.",
+      description: "We&apos;ll get back to you within 24 hours.",
     });
   };
 
@@ -66,7 +66,7 @@ export function Contact({ site }: ContactProps) {
                 color: site.theme?.primaryColor || "",
               }}
             >
-              Let's talk
+              Let&apos;s talk
             </Badge>
           </motion.div>
           <motion.h2
@@ -84,7 +84,7 @@ export function Contact({ site }: ContactProps) {
             viewport={{ once: true }}
             transition={{ delay: 0.2 }}
           >
-            We're here to help you with your next project. Get in touch for
+            We&apos;re here to help you with your next project. Get in touch for
             a no-obligation conversation about your requirements and needs.
           </motion.p>
         </div>

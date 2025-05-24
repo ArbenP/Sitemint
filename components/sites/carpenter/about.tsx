@@ -82,8 +82,7 @@ export function About({ site }: AboutProps) {
                 Craftsmanship with Precision and Quality
               </h2>
               <p className="text-muted-foreground">
-                With over two decades of experience, we bring unmatched
-                expertise and dedication to every project we undertake.
+                {site.description || "With over two decades of experience, we bring unmatched expertise and dedication to every project we undertake."}
               </p>
             </div>
 

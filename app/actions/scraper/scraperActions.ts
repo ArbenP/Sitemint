@@ -10,6 +10,11 @@ const openai = new OpenAI({
   apiKey: process.env.OPENAI_API_KEY,
 });
 
+// Validate OpenAI API key is available
+if (!process.env.OPENAI_API_KEY) {
+  throw new Error("OPENAI_API_KEY environment variable is required");
+}
+
 async function scrapeWebsite(url: string): Promise<string> {
   try {
     console.log("🌐 Starting website scraping for:", url);
@@ -32,11 +37,11 @@ const SiteConfigSchema = z.object({
     name: z.string(),
     email: z.string(),
     phone: z.string().optional(),
-  }),
+  }).optional(),
   theme: z.object({
     primaryColor: z.string(),
     secondaryColor: z.string(),
-  }),
+  }).optional(),
   contact: z.object({
     address: z.string().optional(),
     city: z.string().optional(),
@@ -44,14 +49,14 @@ const SiteConfigSchema = z.object({
     email: z.string().optional(),
     workingHours: z.string().optional(),
     areas: z.array(z.string()).optional(),
-  }),
+  }).optional(),
   services: z.array(
     z.object({
       title: z.string(),
       description: z.string(),
-      price: z.string(),
+      price: z.string().optional(),
     })
-  ),
+  ).optional(),
   socialMedia: z
     .object({
       facebook: z.string().optional(),
