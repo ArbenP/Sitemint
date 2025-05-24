@@ -37,7 +37,7 @@ export function constructMetadata({
           alt: "Sitemint - Website builder",
         },
       ],
-      locale: "nb_NO",
+      locale: "en_IE",
       type: "website",
       siteName: siteName,
       url: siteUrl,

@@ -12,9 +12,9 @@ interface ServicesProps {
 const features = [
   {
     number: "01",
-    title: "Gratis befaring",
+    title: "Free consultation",
     description:
-      "Vi kommer hjem til deg for en grundig vurdering av prosjektet. Vi måler, diskuterer dine ønsker og gir profesjonelle råd basert på vår lange erfaring.",
+      "We come to your home for a thorough project assessment. We measure, discuss your requirements and provide professional advice based on our extensive experience.",
     icon: (
       <div className="relative w-full h-32 mx-auto">
         <div className="absolute inset-0 flex items-center justify-center">
@@ -35,9 +35,9 @@ const features = [
   },
   {
     number: "02",
-    title: "Detaljert pristilbud",
+    title: "Detailed quotation",
     description:
-      "Innen 48 timer mottar du et omfattende tilbud med fastpris. Vi bryter ned kostnadene for materialer og arbeid, slik at du får full oversikt over prosjektet.",
+      "Within 48 hours you'll receive a comprehensive fixed-price quote. We break down costs for materials and labour, giving you full visibility of the project.",
     icon: (
       <div className="relative w-full h-32 mx-auto grid grid-cols-2 gap-3">
         <div className="space-y-3">
@@ -53,9 +53,9 @@ const features = [
   },
   {
     number: "03",
-    title: "Profesjonell utførelse",
+    title: "Professional execution",
     description:
-      "Våre erfarne snekkere utfører arbeidet med høyeste kvalitet og presisjon. Vi holder deg informert gjennom hele prosessen og sikrer at resultatet overgår dine forventninger.",
+      "Our experienced carpenters execute the work with the highest quality and precision. We keep you informed throughout the entire process and ensure the result exceeds your expectations.",
     icon: (
       <div className="relative w-full h-32 mx-auto">
         <div className="absolute inset-0 flex items-center justify-center">
@@ -120,7 +120,7 @@ function FeatureCard({
 
 export function Services({ site }: ServicesProps) {
   return (
-    <section id="tjenester" className="container relative mb-20">
+    <section id="services" className="container relative mb-20">
       <div className="text-center mb-16">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -136,14 +136,14 @@ export function Services({ site }: ServicesProps) {
               color: site.theme?.primaryColor || "",
             }}
           >
-            Slik jobber vi
+            How we work
           </Button>
           <h2 className="text-3xl font-bold tracking-tight sm:text-5xl mb-4">
-            Kvalitetshåndverk i tre enkle steg
+            Quality craftsmanship in three simple steps
           </h2>
           <p className="text-xl text-muted-foreground max-w-[800px] mx-auto">
-            Fra første befaring til ferdig resultat - vi sørger for en smidig
-            prosess og profesjonell utførelse av ditt snekkerprosjekt.
+            From initial consultation to finished result - we ensure a smooth
+            process and professional execution of your carpentry project.
           </p>
         </motion.div>
       </div>

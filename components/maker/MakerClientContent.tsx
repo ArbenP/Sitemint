@@ -30,32 +30,32 @@ function generateEmailContent(
   site: SiteConfig,
   recipient: RecipientInfo
 ): string {
-  return `Hei ${recipient.name}${recipient.title ? `, ${recipient.title}` : ""}!
+  return `Hello ${recipient.name}${recipient.title ? `, ${recipient.title}` : ""}!
 
-Jeg har gleden av å informere deg om at vi har laget en demo-nettside for ${
+I'm pleased to inform you that we have created a demo website for ${
     site.name
-  }. Vi har hentet inspirasjon fra deres nåværende nettsted og lagt til moderne funksjoner og design.
+  }. We've drawn inspiration from your current website and added modern features and design.
 
-Hovedpunkter fra demo-nettsiden:
-• Responsivt design som fungerer perfekt på alle enheter
-• Moderne og profesjonelt utseende
-• Optimalisert for søkemotorer (SEO)
-• Rask lastetid og god ytelse
-• Integrert kontaktskjema
-• Oversiktlig presentasjon av tjenester
-${site.socialMedia ? "• Integrerte sosiale medier-lenker" : ""}
+Key features of the demo website:
+• Responsive design that works perfectly on all devices
+• Modern and professional appearance
+• Search engine optimised (SEO)
+• Fast loading times and good performance
+• Integrated contact form
+• Clear presentation of services
+${site.socialMedia ? "• Integrated social media links" : ""}
 
-Du kan se demo-nettsiden på følgende lenke:
-https://${site.subdomain}.codenord.no
+You can view the demo website at the following link:
+https://${site.subdomain}.sitemint.ie
 
-Jeg vil gjerne høre dine tanker om nettsiden. Vi kan enkelt gjøre tilpasninger basert på dine ønsker og behov.
+I would love to hear your thoughts about the website. We can easily make adjustments based on your preferences and needs.
 
-Ta gjerne kontakt hvis du har spørsmål eller ønsker å diskutere mulighetene videre.
+Please feel free to contact us if you have any questions or would like to discuss the possibilities further.
 
-Med vennlig hilsen
-CodeNord
-Telefon: +47 400 85 185
-E-post: post@codenord.no`;
+Kind regards,
+Sitemint Team
+Phone: +353 1 234 5678
+Email: hello@sitemint.ie`;
 }
 
 interface MakerClientContentProps {
@@ -431,7 +431,7 @@ export default function MakerClientContent({
                         onChange={(e) =>
                           handleRecipientChange("name", e.target.value)
                         }
-                        placeholder="Christer"
+                        placeholder="John"
                       />
                     </div>
                     <div>
@@ -443,7 +443,7 @@ export default function MakerClientContent({
                         onChange={(e) =>
                           handleRecipientChange("title", e.target.value)
                         }
-                        placeholder="Daglig Leder"
+                        placeholder="Managing Director"
                       />
                     </div>
                   </div>

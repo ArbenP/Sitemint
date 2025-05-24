@@ -26,34 +26,34 @@ const item: Variants = {
 
 const portfolioItems = [
   {
-    title: "Moderne Kjøkkenrenovering",
+    title: "Modern Kitchen Renovation",
     image: "/kitchen.jpg",
-    category: "Kjøkken",
+    category: "Kitchen",
   },
   {
-    title: "Gipsplater Installasjon",
+    title: "Plasterboard Installation",
     image: "/kitchen.jpg",
-    category: "Gipsplater",
+    category: "Drywall",
   },
   {
-    title: "Tak Rehabilitering",
+    title: "Roof Rehabilitation",
     image: "/kitchen.jpg",
-    category: "Tak",
+    category: "Roofing",
   },
   {
-    title: "Parkett og Gulvlegging",
+    title: "Parquet and Flooring",
     image: "/kitchen.jpg",
-    category: "Gulv",
+    category: "Flooring",
   },
   {
-    title: "Innvendig Maling",
+    title: "Interior Painting",
     image: "/kitchen.jpg",
-    category: "Maling",
+    category: "Painting",
   },
   {
-    title: "Skreddersydde Skap",
+    title: "Bespoke Wardrobes",
     image: "/kitchen.jpg",
-    category: "Snekkerarbeid",
+    category: "Carpentry",
   },
 ];
 
@@ -75,7 +75,7 @@ export function Portfolio({ site }: PortfolioProps) {
                 color: site.theme?.primaryColor || "",
               }}
             >
-              Våre prosjekter
+              Our projects
             </Badge>
           </motion.div>
           <motion.h2
@@ -84,7 +84,7 @@ export function Portfolio({ site }: PortfolioProps) {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
           >
-            Våre Siste Prosjekter
+            Our Latest Projects
           </motion.h2>
           <motion.p
             className="mx-auto max-w-[700px] text-muted-foreground text-lg"
@@ -93,8 +93,8 @@ export function Portfolio({ site }: PortfolioProps) {
             viewport={{ once: true }}
             transition={{ delay: 0.2 }}
           >
-            Ta en titt på noen av våre nylige prosjekter og se kvaliteten på
-            vårt håndverk.
+            Take a look at some of our recent projects and see the quality of
+            our craftsmanship.
           </motion.p>
         </div>
 

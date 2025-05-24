@@ -18,22 +18,22 @@ function getContactInfo(site: SiteConfig) {
   return [
     {
       icon: Phone,
-      label: "Ring Oss",
+      label: "Call Us",
       value: site.contact?.phone || "",
     },
     {
       icon: Mail,
-      label: "Send E-post",
+      label: "Email Us",
       value: site.contact?.email || "",
     },
     {
       icon: MapPin,
-      label: "Besøk Oss",
+      label: "Visit Us",
       value: `${site.contact?.address}, ${site.contact?.city}`,
     },
     {
       icon: Clock,
-      label: "Åpningstider",
+      label: "Opening Hours",
       value: site.contact?.workingHours || "",
     },
   ];
@@ -44,13 +44,13 @@ export function Contact({ site }: ContactProps) {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    toast.success("Takk for din henvendelse!", {
-      description: "Vi tar kontakt med deg innen 24 timer.",
+    toast.success("Thank you for your enquiry!", {
+      description: "We'll get back to you within 24 hours.",
     });
   };
 
   return (
-    <section id="kontakt" className="py-24 bg-muted/50">
+    <section id="contact" className="py-24 bg-muted/50">
       <div className="container px-4 md:px-6">
         <div className="text-center space-y-4 mb-16">
           <motion.div
@@ -66,7 +66,7 @@ export function Contact({ site }: ContactProps) {
                 color: site.theme?.primaryColor || "",
               }}
             >
-              La oss snakke sammen
+              Let's talk
             </Badge>
           </motion.div>
           <motion.h2
@@ -75,7 +75,7 @@ export function Contact({ site }: ContactProps) {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
           >
-            Få et uforpliktende tilbud
+            Get a free no-obligation quote
           </motion.h2>
           <motion.p
             className="mx-auto max-w-[700px] text-muted-foreground text-lg"
@@ -84,8 +84,8 @@ export function Contact({ site }: ContactProps) {
             viewport={{ once: true }}
             transition={{ delay: 0.2 }}
           >
-            Vi er her for å hjelpe deg med ditt neste prosjekt. Ta kontakt for
-            en uforpliktende samtale om dine ønsker og behov.
+            We're here to help you with your next project. Get in touch for
+            a no-obligation conversation about your requirements and needs.
           </motion.p>
         </div>
 
@@ -100,7 +100,7 @@ export function Contact({ site }: ContactProps) {
                 <div className="space-y-2">
                   <Input
                     type="text"
-                    placeholder="Fornavn"
+                    placeholder="First Name"
                     required
                     className="bg-background"
                   />
@@ -108,7 +108,7 @@ export function Contact({ site }: ContactProps) {
                 <div className="space-y-2">
                   <Input
                     type="text"
-                    placeholder="Etternavn"
+                    placeholder="Last Name"
                     required
                     className="bg-background"
                   />
@@ -117,7 +117,7 @@ export function Contact({ site }: ContactProps) {
               <div className="space-y-2">
                 <Input
                   type="email"
-                  placeholder="E-post"
+                  placeholder="Email"
                   required
                   className="bg-background"
                 />
@@ -125,13 +125,13 @@ export function Contact({ site }: ContactProps) {
               <div className="space-y-2">
                 <Input
                   type="tel"
-                  placeholder="Telefon"
+                  placeholder="Phone"
                   className="bg-background"
                 />
               </div>
               <div className="space-y-2">
                 <Textarea
-                  placeholder="Beskriv ditt prosjekt"
+                  placeholder="Describe your project"
                   required
                   className="min-h-[150px] bg-background resize-none"
                 />
@@ -146,7 +146,7 @@ export function Contact({ site }: ContactProps) {
                 }}
               >
                 <Send className="h-4 w-4" />
-                Send Forespørsel
+                Send Enquiry
               </Button>
             </form>
           </motion.div>

@@ -94,10 +94,10 @@ export async function scrapeAndAnalyzeWebsite(
     // Create a subdomain from the URL
     const urlObj = new URL(url);
     const hostname = urlObj.hostname;
-    // Remove www. and .no, then replace dots and dashes with hyphens
+    // Remove www. and common domain extensions, then replace dots and dashes with hyphens
     const subdomain = hostname
       .replace(/^www\./, "")
-      .replace(/\.no$/, "")
+      .replace(/\.(com|ie|co\.uk|org|net)$/, "")
       .replace(/\./g, "-")
       .replace(/[^a-zA-Z0-9-]/g, "-")
       .toLowerCase();
@@ -111,17 +111,17 @@ export async function scrapeAndAnalyzeWebsite(
           role: "system",
           content: `You are a website analyzer that extracts information to create a SiteConfig object. 
           Extract relevant information from the HTML and make reasonable assumptions for missing data based on the business type and location.
-          IMPORTANT: All text content must be in Norwegian (Bokmål).
+          IMPORTANT: All text content must be in English for Irish businesses.
           Use this subdomain: "${subdomain}"
           
-          Guidelines for Norwegian content:
-          - Use professional Norwegian business language
-          - Use Norwegian currency format (NOK/kr)
-          - Use Norwegian date/time formats
-          - Use Norwegian phone number format (+47)
-          - Use Norwegian address formats
-          - Default working hours should be "Man-Fre: 07:00-16:00" if not specified
-          - Make assumptions that align with Norwegian business practices`,
+          Guidelines for English content:
+          - Use professional English business language
+          - Use Euro currency format (€)
+          - Use Irish/European date formats (DD/MM/YYYY)
+          - Use Irish phone number format (+353)
+          - Use Irish address formats
+          - Default working hours should be "Mon-Fri: 9:00-17:30" if not specified
+          - Make assumptions that align with Irish business practices`,
         },
         {
           role: "user",

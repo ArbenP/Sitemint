@@ -12,7 +12,7 @@ export function Footer({ site }: FooterProps) {
     <footer className="border-t py-6 md:px-8 md:py-0">
       <div className="container flex flex-col items-center justify-between gap-4 md:h-24 md:flex-row">
         <p className="text-center text-sm leading-loose text-muted-foreground md:text-left">
-          © {currentYear} {site.name}. Alle rettigheter reservert.
+          © {currentYear} {site.name}. All rights reserved.
         </p>
         <div className="flex items-center gap-4">
           {site.socialMedia?.facebook && (
@@ -28,7 +28,7 @@ export function Footer({ site }: FooterProps) {
               }
             >
               <Facebook className="h-5 w-5" />
-              <span className="sr-only">Følg oss på Facebook</span>
+              <span className="sr-only">Follow us on Facebook</span>
             </a>
           )}
           {site.socialMedia?.instagram && (
@@ -44,7 +44,7 @@ export function Footer({ site }: FooterProps) {
               }
             >
               <Instagram className="h-5 w-5" />
-              <span className="sr-only">Følg oss på Instagram</span>
+              <span className="sr-only">Follow us on Instagram</span>
             </a>
           )}
           {site.socialMedia?.linkedin && (
@@ -60,7 +60,7 @@ export function Footer({ site }: FooterProps) {
               }
             >
               <Linkedin className="h-5 w-5" />
-              <span className="sr-only">Følg oss på LinkedIn</span>
+              <span className="sr-only">Follow us on LinkedIn</span>
             </a>
           )}
         </div>

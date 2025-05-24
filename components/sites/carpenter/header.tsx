@@ -52,24 +52,24 @@ export function Header({ site }: HeaderProps) {
           <div className="flex items-center gap-6">
             <nav className="flex gap-6">
               <Link
-                href="#tjenester"
+                href="#services"
                 onClick={handleScroll}
                 className={cn(
                   buttonVariants({ variant: "ghost" }),
                   "hover:text-primary"
                 )}
               >
-                Tjenester
+                Services
               </Link>
               <Link
-                href="#om-oss"
+                href="#about"
                 onClick={handleScroll}
                 className={cn(
                   buttonVariants({ variant: "ghost" }),
                   "hover:text-primary"
                 )}
               >
-                Om Oss
+                About Us
               </Link>
               <Link
                 href="#portfolio"
@@ -79,13 +79,13 @@ export function Header({ site }: HeaderProps) {
                   "hover:text-primary"
                 )}
               >
-                Prosjekter
+                Projects
               </Link>
             </nav>
 
             <div className="flex gap-2">
               <Link
-                href="#kontakt"
+                href="#contact"
                 onClick={handleScroll}
                 className={cn(
                   buttonVariants({ variant: "default" }),
@@ -96,7 +96,7 @@ export function Header({ site }: HeaderProps) {
                   borderColor: site.theme?.secondaryColor || "",
                 }}
               >
-                Kontakt
+                Contact
               </Link>
             </div>
           </div>
@@ -111,7 +111,7 @@ export function Header({ site }: HeaderProps) {
               borderColor: site.theme?.primaryColor || "",
             }}
           >
-            Meny
+            Menu
           </button>
         </div>
       </div>

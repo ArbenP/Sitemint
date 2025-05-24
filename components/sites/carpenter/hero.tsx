@@ -28,23 +28,23 @@ function HeroFeatures({ site }: HeroProps) {
       {[
         {
           icon: Trophy,
-          title: "Kvalitet",
-          description: "Håndverkstradisjon",
+          title: "Quality",
+          description: "Craftsmanship tradition",
         },
         {
           icon: Clock,
-          title: "20+ år",
-          description: "Lang erfaring",
+          title: "20+ years",
+          description: "Experience",
         },
         {
           icon: HandshakeIcon,
-          title: "Garanti",
-          description: "På alt arbeid",
+          title: "Guarantee",
+          description: "On all work",
         },
         {
           icon: Hammer,
-          title: "Skreddersydd",
-          description: "Tilpasset dine behov",
+          title: "Bespoke",
+          description: "Tailored to your needs",
         },
       ].map((feature, index) => (
         <motion.div
@@ -82,7 +82,7 @@ function HeroContent({ site }: HeroProps) {
             color: site.theme.primaryColor,
           }}
         >
-          Din lokale snekker i {site.contact.city}
+          Your local carpenter in {site.contact.city}
         </Badge>
       </motion.div>
       <motion.h1
@@ -91,9 +91,9 @@ function HeroContent({ site }: HeroProps) {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8, ease }}
       >
-        Håndverk med{" "}
+        Craftsmanship with{" "}
         <span className="relative" style={{ color: site.theme.primaryColor }}>
-          presisjon
+          precision
           <motion.svg
             className="absolute -bottom-2 left-0 w-full"
             viewBox="0 0 100 8"
@@ -115,9 +115,9 @@ function HeroContent({ site }: HeroProps) {
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 0.1, duration: 0.8, ease }}
       >
-        Fra skreddersydde kjøkkenløsninger til omfattende renoveringer. Vi
-        kombinerer tradisjonelt håndverk med moderne teknikker for å skape
-        varige resultater.
+        From bespoke kitchen solutions to comprehensive renovations. We
+        combine traditional craftsmanship with modern techniques to create
+        lasting results.
       </motion.p>
       <motion.div
         className="flex flex-col sm:flex-row gap-4 pt-4 justify-center lg:justify-start"
@@ -137,7 +137,7 @@ function HeroContent({ site }: HeroProps) {
           }}
         >
           <Ruler className="h-4 w-4" />
-          Få gratis befaring
+          Get free consultation
         </Link>
         <Link
           href={`tel:${site.contact.phone}`}
@@ -151,7 +151,7 @@ function HeroContent({ site }: HeroProps) {
           }}
         >
           <Phone className="h-4 w-4" />
-          Ring oss - {site.contact.phone}
+          Call us - {site.contact.phone}
         </Link>
       </motion.div>
       <HeroFeatures site={site} />
@@ -177,7 +177,7 @@ export function Hero({ site }: HeroProps) {
             >
               <Image
                 src="/about-image.jpg"
-                alt="Profesjonelt snekkerarbeid"
+                alt="Professional carpentry work"
                 fill
                 className="object-cover"
                 priority
